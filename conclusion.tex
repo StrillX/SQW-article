@@ -1,0 +1,17 @@
+In this article we studied how the Staggered Quantum Walk behaves when subjected to the circuit optimization routines that the ZX-calculus offers us. We've shown that the current implementations of the Staggered Quantum Walk can be heavily optimized in both the total number of gates and the T-count. With both of them capable of reaching a reduction of 60-70\% in both of these metrics. Making the SQW an even stronger candidate for NISQ algorithms.
+
+We have also introduced a possible alternative operator to the evolution operator of the Staggered Quantum Walk, being this operator much smaller in the number of total gates and capable of being run on certain, more limited, QPUs.
+
+However, this operator is not without its challenges. It is very non-trivial to use and the problem of which rotations $\alpha_n$ and $\beta_n$ that should be used is far from being solved. Formalizing these rotations would be a necessary step for using this operator conveniently.
+
+Also, the initial state of the quantum walk influences how well the operator approximates the SQW, e.g., if we construct a number of layers of the operator such that it approximates a 5 step SQW with $\ket{4}$ as the initial state, those same layers most likely won't approximate a 5 step SQW with, for example, $\ket{2}$ as the initial state.
+
+In the particular case of the 3 qubit implementation of the SQW it remains an open question what is happening in the initial and final set of seemingly random gates is, for these are the reason the resulting circuit represents the exact same tensor product as the original one.
+
+When applying the exact same circuit simplification routines to a 4 qubit implementation of the Staggered Quantum Walk, this operator did not appear in the resulting circuit. In fact, contrary to the 3 qubit implementation the resulting circuit did not have any sort of structure, it was mostly a seemingly random arrangement of gates.
+
+
+
+
+
+

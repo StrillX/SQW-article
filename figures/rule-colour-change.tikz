@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (5) at (0, -0.05) {=};
+		\node [style=Z phase dot] (6) at (-2.5, 0) {};
+		\node [style=X phase dot] (7) at (2, 0) {};
+		\node [style=none] (8) at (1, 1) {};
+		\node [style=none] (9) at (1, -1) {};
+		\node [style=none] (12) at (-1, 1) {};
+		\node [style=none] (13) at (-1, -1) {};
+		\node [style=hadamard] (14) at (-1.5, 1) {};
+		\node [style=hadamard] (15) at (-1.5, -1) {};
+		\node [style=Z phase dot] (16) at (-2.5, 0) {$\alpha$};
+		\node [style=none] (17) at (-4, 1) {};
+		\node [style=none] (18) at (-4, -1) {};
+		\node [style=hadamard] (19) at (-3.5, 1) {};
+		\node [style=hadamard] (20) at (-3.5, -1) {};
+		\node [style=X phase dot] (21) at (2, 0) {$\alpha$};
+		\node [style=none] (22) at (3, 1) {};
+		\node [style=none] (23) at (3, -1) {};
+		\node [style=none] (24) at (-4, 0.25) {$\vdots$};
+		\node [style=none] (25) at (-1, 0.25) {$\vdots$};
+		\node [style=none] (26) at (1, 0.25) {$\vdots$};
+		\node [style=none] (27) at (3, 0.25) {$\vdots$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (15) to (13.center);
+		\draw (14) to (12.center);
+		\draw [bend left] (6) to (14);
+		\draw [bend right] (6) to (15);
+		\draw (20) to (18.center);
+		\draw (19) to (17.center);
+		\draw [bend right] (16) to (19);
+		\draw [bend left] (16) to (20);
+		\draw [bend left] (8.center) to (7);
+		\draw [bend right] (9.center) to (7);
+		\draw [bend right] (22.center) to (21);
+		\draw [bend left] (23.center) to (21);
+	\end{pgfonlayer}
+\end{tikzpicture}

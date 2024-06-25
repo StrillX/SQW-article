@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=none] (0) at (-6, 1) {};
+		\node [style=none] (1) at (-6, -1) {};
+		\node [style=none] (4) at (3, 1) {};
+		\node [style=none] (5) at (3, -1) {};
+		\node [style=none] (6) at (6, 1) {};
+		\node [style=none] (7) at (6, -1) {};
+		\node [style=none] (8) at (0, -0.05) {=};
+		\node [style=Z dot] (10) at (4, 1) {};
+		\node [style=Z dot] (11) at (4, -1) {};
+		\node [style=X dot] (12) at (-5, 0) {};
+		\node [style=X dot] (13) at (5, 1) {};
+		\node [style=X dot] (14) at (5, -1) {};
+		\node [style=none] (15) at (-3, 1) {};
+		\node [style=none] (16) at (-3, -1) {};
+		\node [style=Z dot] (17) at (-4, 0) {};
+		\node [style=none] (18) at (-6.5, 0.25) {$n\quad\vdots$};
+		\node [style=none] (19) at (2.5, 0.25) {$n\quad\vdots$};
+		\node [style=none] (20) at (-2.5, 0.25) {$\vdots\quad m$};
+		\node [style=none] (21) at (6.5, 0.25) {$\vdots\quad m$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [bend left] (0.center) to (12);
+		\draw [bend left] (12) to (1.center);
+		\draw (10) to (4.center);
+		\draw (10) to (13);
+		\draw (13) to (6.center);
+		\draw (14) to (7.center);
+		\draw (10) to (14);
+		\draw (11) to (13);
+		\draw (11) to (5.center);
+		\draw (11) to (14);
+		\draw [bend right] (15.center) to (17);
+		\draw [bend right] (17) to (16.center);
+		\draw (12) to (17);
+	\end{pgfonlayer}
+\end{tikzpicture}
