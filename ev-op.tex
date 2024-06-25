@@ -41,23 +41,24 @@ Thus yielding the following operator, in the form of a ZX-diagram:
     \tikzfig{sqw-pattern-generalization}
 \end{align}
 
-This operator is constructed by entangling the first and last qubit and placing them in superposition. This is achieved by the XCX-gate (which is a CNOT with an hadamard on both sides of the control), then it is followed by a CNOT gate between the first and last qubit and a rotation over the X-axis on the first qubit. Afterwards a ladder of XCX-gates starting with the first qubit and the $n-1^{th}$ qubit and descending all the way to the second. This is then followed by a rotation over the Z-axis along with a X-axis rotation. Then a CNOT is applied to the first and last qubit, following this there's a X-axis rotation and a XCX-gate over the first qubit and the $n-1^{th}$ qubit. Then there's the second Z-axis rotation subsequently followed by the same ladder of XCX-gates, although this time it starts between the first and the $n-2^{th}$ qubit and descending all the way to the second. Finishing off with the last X-axis rotation.
+This operator is constructed by entangling the first and last qubit and placing them in superposition. This is achieved by the XCX-gate (which is a CNOT with a hadamard on both sides of the control), then it is followed by a CNOT gate between the first and last qubit and a rotation over the X-axis on the first qubit. Afterwards a ladder of XCX-gates starting with the first qubit and the $n-1^{th}$ qubit and descending all the way to the second. This is then followed by a rotation over the Z-axis along with a X-axis rotation. Then a CNOT is applied to the first and last qubit, following this there's a X-axis rotation and a XCX-gate over the first qubit and the $n-1^{th}$ qubit. Then there's the second Z-axis rotation subsequently followed by the same ladder of XCX-gates, although this time it starts between the first and the $n-2^{th}$ qubit and descending all the way to the second. Finishing off with the last X-axis rotation.
 
-The logic behind this operator is creating an uniform distribution over a certain number of states, applying a rotation to that uniform distribution that makes some states more likely than others and then spreading these probabilities over the other states using CNOT gates.
+The logic behind this operator is creating a uniform distribution over a certain number of states, applying a rotation to that uniform distribution that makes some states more likely than others and then spreading these probabilities over the other states using CNOT gates.
 
-When we take the nature of this operator into consideration it is obvious why it only shows up in SQWs over a certain length. The classical operator for the SQW using the increment and decrement layers needs to be repeated a number of times to be able to spread the probabilities distribution over the whole state space. This is something that this alternative operator does on the first layer, thus it cannot approximate SQWs with a small number of steps as well as it can for longer quantum walks.
+When we take the nature of this operator into consideration it is obvious why it only shows up in SQWs over a certain length. The classical operator for the SQW using the increment and decrement layers needs to be repeated a number of times to be able to spread the probabilities' distribution over the whole state space. This is something that this alternative operator does on the first layer, thus it cannot approximate SQWs with a few steps as well as it can for longer quantum walks.
 
 \subsection{Advantages of this alternative operator}
 
-Besides this this new operator has a whole set of advantages. The first one being the total amount of gates needed to represent the evolution of the quantum walk. With the number of qubits in the SQW increasing so does the the cost of the increment and decrement layers, as a $n$ qubit SQW needs to implement MCX gates with $n-1$ controls. These MCX gates need to then be expanded into it's basic gates representation \cite{gate-decomp}. All the while this new operator at most utilizes gates controlled with at most 1 qubit. Also when we go from a $n$ qubit to a $n+1$ qubit quantum walk all that needs to be done is add two more XCX-gates, one to each ladder of XCX-gates, the same can't be said about the evolution operator based on increment and decrement operators. 
+Besides this, this new operator has a whole set of advantages. The first one being the total amount of gates needed to represent the evolution of the quantum walk. With the number of qubits in the SQW increasing so does the cost of the increment and decrement layers, as an $n$ qubit SQW needs to implement MCX gates with $n-1$ controls. These MCX gates need to then be expanded into it's basic gates representation \cite{gate-decomp}. All the while this new operator at most utilizes gates controlled with at most 1 qubit. Also, when we go from an $n$ qubit to a $n+1$ qubit quantum walk all that needs to be done is add two more XCX-gates, one to each ladder of XCX-gates, the same can't be said about the evolution operator based on increment and decrement operators. 
 
-This leads to this alternative operator being much more efficient when it comes to the total amount of gates used, leading to lower depth circuits and in turn less error prone.
+This leads to this alternative operator being much more efficient when it comes to the total amount of gates used, leading to lower depth circuits and in turn less error-prone.
 
 
 
 Just by itself this operator is capable of approximating the evolution of a SQW. Although the approximation isn't perfect it can yield results with a distribution of probabilities quite similar to the original implementation of the SQW.
-
-\todo {Graficos a comparar}
+\begin{align}
+    \includegraphics[width=0.7\linewidth]{figures/4step.pdf}
+\end{align}
 
 One particular advantage of this specific implementation of the evolution operator is that it can work quite well on QPUs that have a very limited connectivity. This is due to the fact that all the qubits used in the SQW only need to have a strong connectivity with only the first qubit, thus minimizing possible errors occurring from having to operate on two qubits with poor connectivity.
 

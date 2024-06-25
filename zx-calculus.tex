@@ -1,6 +1,54 @@
-In this section we provide a very brief explanation of what the ZX-calculus is and it's rewrite rules. For a more in depth overview of the ZX-calculus please refer to \cite{ZX-overview}.
+The ZX-calculus is diagrammatic language for reasoning about linear maps between qubits and, as such, about quantum computation in general.
+
+In this section we provide a very brief explanation of what the ZX-calculus is, and it's rewrite rules. For a more in depth overview of the ZX-calculus please refer to \cite{ZX-overview}.
 
 \subsection{Generators}
-The basic generator of the ZX-calculus are what we refer to as the \textit{spider}. There are two kinds of \textit{spiders}, the Z-spider and the X-spider. These spiders are then connected to each other by wires.
+The basic generator of the ZX-calculus are what we refer to as the \textit{spider}. There are two variants of \textit{spiders}, the Z-spider and the X-spider. These spiders can possess a phase $x$, which represents a rotation over the Z- or X-basis depending on the \textit{spider} being used. These spiders are then connected to each other by wires.
 
-\todo {Completar a introducao ao ZX e regras de reescrita}
+\subsection{Rewrite Rules}
+Along with the generators there is also a set of rewrite rules that allows us to obtain equivalent ZX-diagrams to a given ZX-diagram (up to a global non-zero scalar). Which in turn can yield a completely different perspective on the ZX-diagram we started with.
+
+The following are the basic set of rewrite rules from the ZX-calculus. These rules can then be used to infer new, more complex rules.
+
+\begin{itemize}
+    \item Spider Fusion
+    \begin{align}
+        \tikzfig{rule-sf}
+    \end{align}
+    \item Identity Removal
+    \begin{align}
+        \tikzfig{rule-id}
+    \end{align}
+    \item Hadamard cancellation
+    \begin{align}
+        \tikzfig{rule-had-id}
+    \end{align}
+    \item $\pi$-commutation
+    \begin{align}
+        \tikzfig{rule-pi-com}
+    \end{align}
+    \item State copy
+    \begin{align}
+        \tikzfig{rule-state-copy}
+    \end{align}
+    \item Color change
+    \begin{align}
+        \tikzfig{rule-colour-change}
+    \end{align}
+    \item Bialgebra / Strong Complementarity
+    \begin{align}
+        \tikzfig{rule-bialg}
+    \end{align}
+    \item Hopf
+    \begin{align}
+        \tikzfig{rule-hopf}
+    \end{align}
+\end{itemize}
+
+It was introduced in those rules the Hadamard gate, represented by a yellow box. This is merely a notation used out of convenience, as the hadamard gate can be decomposed using Euler angles. This notation is simplified even further, in the coming ZX-diagrams as a dashed blue edge/wire. Leaving us with:
+
+\begin{align}
+    \tikzfig{had-euler-decomp}
+\end{align}
+
+
