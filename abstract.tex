@@ -1,1 +1,38 @@
-Quantum Walks have a vast amount of applications in the current landscape of algorithm design. In this paper we analyze a specific implementation of a Quantum Walk, the Staggered Quantum Walk using the ZX-calculus. While conducting this analysis we discovered a possible alternative evolution operator for the Staggered Quantum Walk, that utilizes a much smaller amount of gates and can also be used in QPUs with limited qubit connectivity.
+%Quantum Walks have a vast amount of applications in the current landscape of algorithm design. In this paper we analyse a specific implementation of a Quantum Walk, the Staggered Quantum Walk using the ZX-calculus. While conducting this analysis we discovered a possible alternative evolution operator for the Staggered Quantum Walk, that utilizes a much smaller amount of gates and can also be used in QPUs with limited qubit connectivity.
+%
+%
+%Quantum walks, the quantum analogs of random walks, emerged as very versatile tool in quantum algorithm design, with exciting applications in unstructured search, graph algorithmics and communication protocols. Unlike their classical counterparts, they explore quantum interference patterns which, breaking the walk symmetry around the origin, leads to much quicker evolution of the walker, a sort of ballistic behaviour in the words of Venegas.
+%
+
+
+The staggered model is a recent, very general variant of discrete-time quantum walks which, avoiding the use of a coin to direct the walker evolution, explores the underlying graph structure to build an evolution operator based on local unitaries induced by adjacent vertices. Indeed, unlike conventional, coin-based quantum walks, which proceed straightforwardly from one vertex to another, the staggered variant takes advantage of forming partitions of graph cliques over the graph structure of the walking space. Then, it combines  local evolution operators  corresponding to different partitions  along discrete time steps.  Optimizing  the implementation of staggered walks in order to increase resilience to decoherence phenomena motivates their analysis with the ZX-calculus, an exercise that is the object of this short paper. As expected, the calculus rewrote the original circuit, significantly reducing the number of (expensive) gates used. Moreover, the exercise identified an underlying pattern leading to an alternative, potentially more efficient evolution operator.
+
+
+
+%
+%
+%. Such a tessellation-based approach provides a
+%structured framework for the evolution of quantum states, enabling the
+%exploration of complex graph structures with enhanced versatility and
+%precision~\cite{PhysRevA.98.052310,PhysRevA.98.012123}.  This model encompasses
+%a substantial portion of the subclass of discrete-time quantum walks, including
+%the coined and Szegedy's
+%models~\cite{Portugal2016,Portugal2016_1,PhysRevA.95.012328}.
+%
+%
+%
+%
+%Unlike their classical counterparts,
+%quantum walks take advantage of quantum coherence, enabling interference
+%effects that lead to the ballistic spreading of the walker. This unique
+%characteristic has proven invaluable in various applications, from designing
+%quantum search algorithms~\cite{PhysRevA.67.052307,Portugal2018} and
+%implementing communication protocols~\cite{Shang_2018,8972594} to ac
+%
+%
+%are a recent 
+%quantum walks take advantage of quantum coherence, enabling interference
+%effects that lead to the ballistic spreading of the walker. This unique
+%characteristic has proven invaluable in various applications, from designing
+%quantum search algorithms~\cite{PhysRevA.67.052307,Portugal2018} and
+%implementing communication protocols~\cite{Shang_2018,8972594} to ac

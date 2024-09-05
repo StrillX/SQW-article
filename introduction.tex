@@ -1,8 +1,17 @@
-The quantum equivalents of classical random walks are known as quantum walks. 
-Much like the classical random walks, quantum random walks can be both discrete or continuous. 
-In a classical random walk, the walker exists in definite states, and stochastic state transitions are what cause the unpredictability. In a quantum random walk this randomness emerges from the superposition of quantum states, unitary evolution and state measurements. The particular quantum walk that this work focuses on is the Staggered Quantum Walk.
 
-Much like classical random walks which have proven to be a very powerful tool in the development of stochastic algorithms \cite{stochastic-algos,ksat}, quantum walks are a state-of-the-art tool for constructing quantum algorithms. The range of the applications of quantum walks is vast and with a large set of open problems \cite{QW-overview}. 
+Thought of as the quantum counterpart to classical random walks, quantum walks \cite{QW-overview} provide an interesting technique in algorithmic design, 
+with  applications in unstructured search, graph algorithmics and communication protocols.
+
+Differently from the classical case, where the  walker next move follows the result of some sort of random choice, in a quantum setting evolution typically 
+proceeds in an equally weighed superposition of possible moves through the iteration of a unitary operator, without resorting to intermediate measurements. 
+This results in a very rich dynamics, in which the design of the evolution operator, and even seemingly
+innocent differences  in its phase  and in the initial state, determine complex 'walking patterns'  
+which differ greatly both among them and in contrast to the classical setting.
+
+The relevance of quantum walks as a tool for algorithmic design justifies both a better understanding of their behaviour and the optimization of their implementation, namely to increase resilience to decoherence phenomena. This short paper resorts to the ZX-calculus \cite{CoeckeD08,ZX-overview,CoeckeHKW22} for such a purpose. The ZX-calculus is a diagrammatic language for reasoning about linear maps between qubits. It is based on generators --- the \emph{spiders} --- that generalise rotations over the $Z$ and $X$ basis, and sets of rewrite rules whose completeness means that  equality between linear maps can be proven diagrammatically. This allows for program transformation in quantum software engineering, guided by powerful  circuit optimisation strategies for e.g. T-count reduction and gate compilation.
+
+The exercise reported here focus on a recent, very general variant of discrete-time quantum walks --- the \emph{staggered}
+ model  \cite{PortugalSFG16} --- which, avoiding the use of a coin to direct the walker evolution, explores the underlying graph structure to build an evolution operator based on local unitaries induced by adjacent vertices.  The model is reviewed in Section 2. Then, in Section 3, its standard circuit implementation is translated and rewritten in ZX, supported by  the \textit{PyZX} tool \cite{pyzx}. This process leads in Section 4 to the identification of a diagrammatic pattern providing an interesting approximation to, and in some cases,  more efficient version, of the underlying evolution operator.  
 
 
 
