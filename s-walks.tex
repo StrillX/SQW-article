@@ -1,12 +1,12 @@
 In contrast to conventional, coin-based quantum walks, which proceed straightforwardly from one vertex to another, the staggered variant  \cite{PortugalSFG16} takes advantage of forming partitions of graph cliques\footnote{A clique is a subset of vertices of an
 undirected graph such that every two distinct vertices are adjacent.} over the graph structure of the walking space. Each partition forms a tesselation whose elements do not overlap. The set of
 cliques in each tessellation must cover all vertices of the graph, and the set
-of tessellations $\{T_{1}$,$T_{2}$,...,$T_{k}\}$ chosen
+of tessellations $\{T_{1}$,$T_{2}$, \ldots ,$T_{k}\}$ chosen
 must cover all the edges.
 
 Then  a unit vector, typically encoding a uniform
 superposition, is associated to each clique so that
-the vector belongs to the subspace spanned by the corresponding vertices. I.e., 
+the vector belongs to the subspace spanned by the corresponding vertices; i. e., 
 \begin{equation}
 	\ket{u_{j}^{k}} = \frac{1}{\sqrt{\mathopen|\alpha_{j}^{k}}\mathclose|}\sum_{l\in\alpha_{j}^{k}}\ket{l},
 \end{equation}
@@ -19,7 +19,7 @@ This way each tessellation $k$ gives rise to an operator
 \end{equation}
 which propagates the probability amplitude locally, in each clique.
 The composition of all such operators defines the evolution operator, which, by solving the 
-the time-independent Schrodinger equation, is equivalent to 
+the time-independent Schr\"odinger equation, is equivalent to 
 \begin{equation}
 	U = e^{i\theta_{k}H_{k}}...e^{i\theta_{2}H_{2}}e^{i\theta_{1}H_{1}}, \text{  where  }\; e^{i\theta_{k}H_{k}} = \cos{(\theta_k)}I + i\sin{(\theta_k)}H_k
 	\label{eq:stagWalkUnmodOp}

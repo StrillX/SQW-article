@@ -1,0 +1,92 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{DKPvdW20}
+
+\bibitem[CAB{\etalchar{+}}21]{Cer21}
+M.~Cerezo, Andrew Arrasmith, Ryan Babbush, Simon~C. Benjamin, Suguru Endo,
+  Keisuke Fujii, Jarrod~R. McClean, Kosuke Mitarai, Xiao Yuan, Lukasz Cincio,
+  and Patrick~J. Coles.
+\newblock Variational quantum algorithms.
+\newblock {\em Nature Reviews Physics}, 3(9):625?644, August 2021.
+
+\bibitem[CD08]{CoeckeD08}
+Bob Coecke and Ross Duncan.
+\newblock Interacting quantum observables.
+\newblock In Luca Aceto, Ivan Damg{\aa}rd, Leslie~Ann Goldberg, Magn{\'{u}}s~M.
+  Halld{\'{o}}rsson, Anna Ing{\'{o}}lfsd{\'{o}}ttir, and Igor Walukiewicz,
+  editors, {\em Automata, Languages and Programming, 35th International
+  Colloquium, {ICALP} 2008, Reykjavik, Iceland, July 7-11, 2008, Proceedings.},
+  volume 5126 of {\em Lecture Notes in Computer Science}, pages 298--310.
+  Springer, 2008.
+
+\bibitem[CHKW22]{CoeckeHKW22}
+Bob Coecke, Dominic Horsman, Aleks Kissinger, and Quanlong Wang.
+\newblock Kindergarden quantum mechanics graduates \emph{...or how {I} learned
+  to stop gluing {LEGO} together and love the ZX-calculus}.
+\newblock {\em Theor. Comput. Sci.}, 897:1--22, 2022.
+
+\bibitem[dBKvdW22]{extraction-p-hard}
+Niel de~Beaudrap, Aleks Kissinger, and John van~de Wetering.
+\newblock Circuit extraction for zx-diagrams can be \#p-hard.
+\newblock In {\em 49th International Colloquium on Automata, Languages, and
+  Programming (ICALP 2022)}. Schloss Dagstuhl – Leibniz-Zentrum für
+  Informatik, 2022.
+
+\bibitem[DKPvdW20]{Dun20}
+Ross Duncan, Aleks Kissinger, Simon Perdrix, and John van~de Wetering.
+\newblock Graph-theoretic simplification of quantum circuits with the
+  zx-calculus.
+\newblock {\em Quantum}, 4:279, June 2020.
+
+\bibitem[DTB16]{Dun16}
+Vedran Dunjko, Jacob~M. Taylor, and Hans~J. Briegel.
+\newblock Quantum-enhanced machine learning.
+\newblock {\em Physical Review Letters}, 117(13), September 2016.
+
+\bibitem[KvdW20a]{pyzx}
+Aleks Kissinger and John van~de Wetering.
+\newblock Pyzx: Large scale automated diagrammatic reasoning.
+\newblock {\em Electronic Proceedings in Theoretical Computer Science},
+  318:229–241, May 2020.
+
+\bibitem[KvdW20b]{t-count-opt}
+Aleks Kissinger and John van~de Wetering.
+\newblock Reducing the number of non-clifford gates in quantum circuits.
+\newblock {\em Physical Review A}, 102(2), August 2020.
+
+\bibitem[Pre18]{Preskill2018}
+John Preskill.
+\newblock Quantum {C}omputing in the {NISQ} era and beyond.
+\newblock {\em {Quantum}}, 2:79, August 2018.
+
+\bibitem[PSFG16]{PortugalSFG16}
+Renato Portugal, Raqueline A.~M. Santos, Tharso~D. Fernandes, and Demerson~N.
+  Gon{\c{c}}alves.
+\newblock The staggered quantum walk model.
+\newblock {\em Quantum Inf. Process.}, 15(1):85--101, 2016.
+
+\bibitem[San21]{MScJaime}
+Jaime Santos.
+\newblock {Q}uantum random walks: simulations and physical realizations.
+\newblock {MSc Thesis in Engineering Physics}, DI, Universidade do Minho, 2021.
+
+\bibitem[Sle06]{gate-decomp}
+Alexander Slepoy.
+\newblock Quantum gate decomposition algorithms.
+\newblock {Sandia Report SAND2006-3440}, Sandia National Laboratories, 2006.
+
+\bibitem[UPR{\etalchar{+}}23]{Ufr23}
+Christian Ufrecht, Maniraman Periyasamy, Sebastian Rietsch, Daniel~D. Scherer,
+  Axel Plinge, and Christopher Mutschler.
+\newblock Cutting multi-control quantum gates with zx calculus.
+\newblock {\em Quantum}, 7:1147, October 2023.
+
+\bibitem[VA12]{QW-overview}
+Salvador Venegas-Andraca.
+\newblock Quantum walks: a comprehensive review.
+\newblock {\em Quantum Information Processing}, 11(5):1015–1106, July 2012.
+
+\bibitem[vdW20]{ZX-overview}
+John van~de Wetering.
+\newblock Zx-calculus for the working quantum computer scientist, 2020.
+
+\end{thebibliography}
