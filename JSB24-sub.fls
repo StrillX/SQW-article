@@ -1,6 +1,6 @@
-PWD C:\Users\bruno\Documents\SQW-article
-INPUT C:\Users\bruno\AppData\Local\MiKTeX\miktex\data\le\pdftex\latex.fmt
-INPUT JSB24-sub.tex
+PWD c:\Users\bruno\Documents\SQW-article
+INPUT C:\Users\bruno\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\bruno\Documents\SQW-article\JSB24-sub.tex
 OUTPUT JSB24-sub.log
 INPUT C:\Users\bruno\AppData\Local\Programs\MiKTeX\tex\latex\llncs\llncs.cls
 INPUT C:\Users\bruno\AppData\Local\Programs\MiKTeX\tex\latex\llncs\llncs.cls
@@ -639,8 +639,6 @@ INPUT C:\Users\bruno\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti9.tfm
 INPUT JSB24-sub.aux
 INPUT .\JSB24-sub.out
 INPUT .\JSB24-sub.out
-INPUT C:\Users\bruno\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Users\bruno\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\bruno\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\bruno\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\bruno\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx6.pfb
