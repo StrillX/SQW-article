@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  11 OCT 2024 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  11 OCT 2024 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1543,34 +1543,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--57
 (figures/1-step-sqw.tikz)
 
 Package caption Warning: \setcaptiontype
-(caption)                outside box or environment on input line 11.
+(caption)                outside box or environment on input line 14.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 11.
+(caption)                particular \caption on input line 14.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-
-
-[4 <./img/stagqwMultiple.png>] (figures/1-step-expanded.tikz)
-(figures/1-step-expanded.tikz)
-Overfull \hbox (37.9885pt too wide) detected at line 19
+(figures/1-step-expanded.tikz) (figures/1-step-expanded.tikz)
+Overfull \hbox (37.9885pt too wide) detected at line 22
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--21
+
+[4 <./img/stagqwMultiple.png>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 24.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 (figures/1-step-trivial.tikz) (figures/1-step-trivial.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 35.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
@@ -1579,7 +1590,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 (figures/graph-like.tikz) (figures/graph-like.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 44.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
@@ -1588,12 +1605,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
 [5]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 64.
+(caption)                particular \caption on input line 72.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 77.
+(caption)                particular \caption on input line 85.
 See the caption package documentation for explanation.
 
 )
@@ -1625,7 +1642,7 @@ See the caption package documentation for explanation.
 
 
 [7]
-<figures/new_4step.pdf, id=135, 1276.77pt x 897.3525pt>
+<figures/new_4step.pdf, id=138, 1276.77pt x 897.3525pt>
 File: figures/new_4step.pdf Graphic file (type pdf)
 <use figures/new_4step.pdf>
 Package pdftex.def Info: figures/new_4step.pdf  used on input line 49.
@@ -1635,24 +1652,24 @@ File: figures/new_4step.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/new_4step.pdf  used on input line 49.
 (pdftex.def)             Requested size: 242.98541pt x 170.77258pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[8]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 50.
 See the caption package documentation for explanation.
 
-)
+
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+
+
+[8 <./figures/new_4step.pdf>])
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 (conclusion.tex
 
-[9 <./figures/new_4step.pdf>])
+[9])
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
@@ -1674,10 +1691,10 @@ Package rerunfilecheck Info: File `JSB24-sub.out' has not changed.
 (rerunfilecheck)             Checksum: 3B96676B0975973B48378CDDBF922308;283.
  ) 
 Here is how much of TeX's memory you used:
- 43541 strings out of 473904
- 986402 string characters out of 5726601
- 2002908 words of memory out of 5000000
- 65351 multiletter control sequences out of 15000+600000
+ 43547 strings out of 473904
+ 986462 string characters out of 5726601
+ 2003908 words of memory out of 5000000
+ 65354 multiletter control sequences out of 15000+600000
  580714 words of font info for 192 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,20n,110p,1168b,916s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1708,9 +1725,9 @@ lic/amsfonts/cm/cmti10.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/amsfonts/cm/cmti9.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/bruno/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on JSB24-sub.pdf (11 pages, 509711 bytes).
+Output written on JSB24-sub.pdf (11 pages, 509688 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  33316 words of extra memory for PDF output out of 35830 (max. 10000000)
 

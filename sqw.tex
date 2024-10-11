@@ -1,6 +1,8 @@
 
 
-A circuit implementation of the staggered model can be found in \cite{MScJaime}. As expected, it resorts to the joint tessellation dynamics, in contrast to a coined quantum walk that uses a coin as a shift operator. For the example discussed above, it yields
+A circuit implementation of the staggered model can be found in \cite{MScJaime}. 
+%As expected, it resorts to the joint tessellation dynamics, in contrast to a coined quantum walk that uses a coin as a shift operator. 
+For the example discussed above, it yields
 \ctikzfig{sqw-circuit}
 where $R_x(\theta) = e^{\frac{-i\theta X}{2}}$ and the Inc(rement) and Dec(rement) circuits have the usual implementation through  generalised Toffoli gates. When the walker reaches the limit of the state space it cycles back.
 An  implementation for a 3 qubit staggered quantum walk, and taking $\theta = \frac{\pi}{3}$, which maximizes\footnote{For this specific graph $\theta = \frac{\pi}{3}$ maximizes propagation, however $\frac{\pi}{2}$ is the optimal parameter for a complete graph.} propagation, is represented in a ZX diagram as
@@ -8,6 +10,7 @@ An  implementation for a 3 qubit staggered quantum walk, and taking $\theta = \f
 \begin{align*}
     \tikzfig{1-step-sqw}
 \end{align*}
+\label{original}
 \captionof{figure}{A ZX-diagram of a 1-step staggered quantum walk with the starting state $\ket{4}$, that being the reason for the $\pi$ X-spider on the third qubit.}
 ~\\
 
@@ -17,6 +20,8 @@ which takes advantage of the ZH-calculus H-box notation for representing Toffoli
 \begin{align*}
     \tikzfig{1-step-expanded}
 \end{align*}
+\label{expanded}
+\captionof{figure}{The resulting ZX-diagram after the expansion of the basic gates}
 ~\\
 
 Some simple optimisations can be considered to deal with the CNOT gate at the end of the expansion of the Toffoli gate and the CNOT belonging to the increment operator, and similarly, but for a X-spider between the CNOT targets,  in the decrement operator. Moreover, one may cancel the two X-spiders with phase $\pi$ in the first qubit between the increment and decrement layers, and the two consecutive Hadamard gates in the last qubit. The result is 
@@ -26,6 +31,8 @@ the following ZX-diagram,
     \tikzfig{1-step-trivial}
     \label{fig:trivial}
 \end{align*}
+\label{trivial}
+\captionof{figure}{A slightly optimized and equivalent ZX-diagram.}
 ~\\
 
 These optimisations  slightly reduced the number of Clifford gates in the diagram. More advanced techniques, described in \cite{t-count-opt} and  directly implemented in \textit{PyZX} \cite{pyzx} as the \texttt{full\_reduce} method, may reduce the circuit T-count  in about $50\%$ \cite{t-count-opt}. Although this is not the case for our small example, when we start applying such simplifications to staggered models with  larger amounts of steps the T-count reduction can reach  approximately $60$-$70\%$.
@@ -34,6 +41,7 @@ Back to the example, this simplification yields
 \begin{align*}
     \tikzfig{graph-like}
 \end{align*}
+\captionof{figure}{A \textit{graph-like} and equivalent ZX-diagram.}
 ~\\
 
 This diagram no longer resembles a circuit, making a comparison with the original one difficult. The circuit extracted \cite{extraction-p-hard} by \textit{PyZX} has 
