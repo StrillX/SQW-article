@@ -1,4 +1,19 @@
+In this section we provide a very brief explanation of what the ZX-calculus is, and it's rewrite rules. For a more in depth overview of the ZX-calculus please refer to \cite{ZX-overview}.
 
+The ZX-calculus is a diagrammatic language for reasoning about linear maps between qubits. It is based on generators --- the \emph{spiders} --- that generalise rotations over the $Z$ and $X$ basis, and sets of rewrite rules whose completeness means that  equality between linear maps can be proven diagrammatically. 
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Spider fusion & Identity removal & Hadamard identity & $\pi$-commutation \\
+    \tikzfig{rule-sf} & \tikzfig{rule-id} &  \tikzfig{rule-had-id} & \tikzfig{rule-pi-com} \\ \hline
+    State copy & Color Change & Bialgebra &  Hopf \\
+    \tikzfig{rule-state-copy} & \tikzfig{rule-colour-change} & \tikzfig{rule-bialg} & \tikzfig{rule-hopf} \\  \hline
+\end{tabular}
+}
+\end{table}
 
 A circuit implementation of the staggered model can be found in \cite{MScJaime}. 
 %As expected, it resorts to the joint tessellation dynamics, in contrast to a coined quantum walk that uses a coin as a shift operator. 
@@ -15,27 +30,30 @@ An  implementation for a 3 qubit staggered quantum walk, and taking $\theta = \f
 ~\\
 
 \noindent
-which takes advantage of the ZH-calculus H-box notation for representing Toffoli gates in a concise way. Expanding Toffoli into its basic gates leads to 
+which takes advantage of the ZH-calculus H-box notation for representing Toffoli gates in a concise way. 
+% Expanding Toffoli into its basic gates leads to 
 
-\begin{align*}
-    \tikzfig{1-step-expanded}
-\end{align*}
-\label{expanded}
-\captionof{figure}{The resulting ZX-diagram after the expansion of the basic gates}
-~\\
+% \begin{align*}
+%     \tikzfig{1-step-expanded}
+% \end{align*}
+% \label{expanded}
+% \captionof{figure}{The resulting ZX-diagram after the expansion of the basic gates}
+% ~\\
 
-Some simple optimisations can be considered to deal with the CNOT gate at the end of the expansion of the Toffoli gate and the CNOT belonging to the increment operator, and similarly, but for a X-spider between the CNOT targets,  in the decrement operator. Moreover, one may cancel the two X-spiders with phase $\pi$ in the first qubit between the increment and decrement layers, and the two consecutive Hadamard gates in the last qubit. The result is 
-the following ZX-diagram,
+% Some simple optimisations can be considered to deal with the CNOT gate at the end of the expansion of the Toffoli gate and the CNOT belonging to the increment operator, and similarly, but for a X-spider between the CNOT targets,  in the decrement operator. Moreover, one may cancel the two X-spiders with phase $\pi$ in the first qubit between the increment and decrement layers, and the two consecutive Hadamard gates in the last qubit. The result is 
+% the following ZX-diagram,
 
-\begin{align*}
-    \tikzfig{1-step-trivial}
-    \label{fig:trivial}
-\end{align*}
-\label{trivial}
-\captionof{figure}{A slightly optimized and equivalent ZX-diagram.}
-~\\
+% \begin{align*}
+%     \tikzfig{1-step-trivial}
+%     \label{fig:trivial}
+% \end{align*}
+% \label{trivial}
+% \captionof{figure}{A slightly optimized and equivalent ZX-diagram.}
+% ~\\
 
-These optimisations  slightly reduced the number of Clifford gates in the diagram. More advanced techniques, described in \cite{t-count-opt} and  directly implemented in \textit{PyZX} \cite{pyzx} as the \texttt{full\_reduce} method, may reduce the circuit T-count  in about $50\%$ \cite{t-count-opt}. Although this is not the case for our small example, when we start applying such simplifications to staggered models with  larger amounts of steps the T-count reduction can reach  approximately $60$-$70\%$.
+% These optimisations  slightly reduced the number of Clifford gates in the diagram. 
+%More 
+Advanced techniques, described in \cite{t-count-opt} and  directly implemented in \textit{PyZX} \cite{pyzx} as the \texttt{full\_reduce} method, may reduce the circuit T-count  in about $50\%$ \cite{t-count-opt}. Although this is not the case for our small example, when we start applying such simplifications to staggered models with  larger amounts of steps the T-count reduction can reach  approximately $60$-$70\%$.
 Back to the example, this simplification yields 
 
 \begin{align*}
@@ -45,16 +63,19 @@ Back to the example, this simplification yields
 ~\\
 
 This diagram no longer resembles a circuit, making a comparison with the original one difficult. The circuit extracted \cite{extraction-p-hard} by \textit{PyZX} has 
-more gates than the one obtained from the simple optimisations mentioned above,  although the T-count is indeed smaller.
+more gates than the one obtained from simple optimisations one can perform,  although the T-count is indeed smaller.
   
 %\begin{align}
 %    \tikzfig{fullreduce-simple}
 %\end{align}
 
-In fact, the \texttt{full\_reduce} method introduces several additional Hadamard gates  to make all the edges Hadamard-edges, and color-changes all the X-spiders. 
-The subsequent  circuit extraction  'preserves' the nature of the \textit{graph-like} ZX-diagram. As such there are a lot of Hadamard gates and Z-spiders that could cancel-out or change color. Following the extraction with a small set of simplifications, basically resorting to fusion rewrite rules followed by a color-change, we get a much smaller circuit. 
+In fact, the \texttt{full\_reduce} method introduces several additional Hadamard gates. % to make all the edges Hadamard-edges, and color-changes all the X-spiders. 
+The subsequent  circuit extraction  'preserves' the nature of the \textit{graph-like} ZX-diagram. 
+%As such there are a lot of Hadamard gates and Z-spiders that could cancel-out or change color. 
+Following the extraction with a small set of simplifications, basically resorting to fusion rewrite rules followed by a color-change, we get a much smaller circuit. 
 
-This fully-simplified circuit now surpasses the original circuit in both the total amount of gates and T-count, but not the one obtained with the simple optimisations above. Although the reduction of both these metrics are not that significant in this example, when applying the same techniques in models with a greater number of steps  reductions in the number of gates and T-count become quite clear. The following tables show, respectively, the total number of  gates and the T-count value induced by the different optimisation procedures used on the same 3-qubit implementation.
+This fully-simplified circuit now surpasses the original circuit in both the total amount of gates and T-count.%, but not the one obtained with the simple optimisations above. 
+Although the reduction of both these metrics are not that significant in this example, when applying the same techniques in models with a greater number of steps  reductions in the number of gates and T-count become quite clear. The following tables show, respectively, the total number of  gates and the T-count value induced by the different optimisation procedures used on the same 3-qubit implementation.
 
 \begin{table}[H]
 \centering
@@ -63,7 +84,7 @@ This fully-simplified circuit now surpasses the original circuit in both the tot
                                & \multicolumn{4}{l|}{Number of steps in the staggered quantum walk:}                                   \\ \hline
 Optimizations used:          & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{2}  & \multicolumn{1}{c|}{4}   & 8   \\ \hline
 None            & \multicolumn{1}{c|}{39} & \multicolumn{1}{c|}{77} & \multicolumn{1}{c|}{153} & 305 \\ \hline
-Simple     & \multicolumn{1}{c|}{31} & \multicolumn{1}{c|}{59} & \multicolumn{1}{c|}{115} & 227 \\ \hline
+%Simple     & \multicolumn{1}{c|}{31} & \multicolumn{1}{c|}{59} & \multicolumn{1}{c|}{115} & 227 \\ \hline
 Full-reduce + fusion/id/to\_rg & \multicolumn{1}{c|}{37} & \multicolumn{1}{c|}{47} & \multicolumn{1}{c|}{72}  & 118 \\ \hline
 \end{tabular}
 
@@ -78,7 +99,7 @@ Full-reduce + fusion/id/to\_rg & \multicolumn{1}{c|}{37} & \multicolumn{1}{c|}{4
                                & \multicolumn{4}{l|}{Number of steps in the staggered quantum walk:}                                  \\ \hline
 Optimizations used:          & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{2}  & \multicolumn{1}{c|}{4}  & 8   \\ \hline
 None            & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{32} & \multicolumn{1}{c|}{64} & 128 \\ \hline
-Simple       & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{32} & \multicolumn{1}{c|}{64} & 128 \\ \hline
+%Simple       & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{32} & \multicolumn{1}{c|}{64} & 128 \\ \hline
 Full-reduce + fusion/id/to\_rg & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{28} & 52  \\ \hline
 \end{tabular}
 \end{table}

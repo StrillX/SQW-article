@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  11 OCT 2024 15:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  11 OCT 2024 16:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1529,88 +1529,63 @@ File: img/stagqwMultiple.png Graphic file (type png)
 <use img/stagqwMultiple.png>
 Package pdftex.def Info: img/stagqwMultiple.png  used on input line 52.
 (pdftex.def)             Requested size: 238.49284pt x 173.44933pt.
-
-Underfull \vbox (badness 7326) has occurred while \output is active []
-
-
-
-[3 <./img/tesselation.png>])
+)
 Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
 
-(sqw.tex (figures/sqw-circuit.tikz) (figures/1-step-sqw.tikz)
+
+
+[3 <./img/tesselation.png> <./img/stagqwMultiple.png>] (sqw.tex
+(figures/rule-sf.tikz) (figures/rule-id.tikz) (figures/rule-had-id.tikz)
+(figures/rule-pi-com.tikz) (figures/rule-state-copy.tikz)
+(figures/rule-colour-change.tikz) (figures/rule-bialg.tikz)
+(figures/rule-hopf.tikz) (figures/sqw-circuit.tikz) (figures/1-step-sqw.tikz)
 (figures/1-step-sqw.tikz)
 
 Package caption Warning: \setcaptiontype
-(caption)                outside box or environment on input line 14.
+(caption)                outside box or environment on input line 29.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 14.
+(caption)                particular \caption on input line 29.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
 
  []
 
-(figures/1-step-expanded.tikz) (figures/1-step-expanded.tikz)
-Overfull \hbox (37.9885pt too wide) detected at line 22
-[]
- []
 
 
-
-[4 <./img/stagqwMultiple.png>]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 24.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-(figures/1-step-trivial.tikz) (figures/1-step-trivial.tikz)
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 35.
-See the caption package documentation for explanation.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
+[4]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(figures/graph-like.tikz) (figures/graph-like.tikz)
+ (figures/graph-like.tikz) (figures/graph-like.tikz)
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 44.
+(caption)                particular \caption on input line 62.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 93.
+See the caption package documentation for explanation.
 
 
 
 [5]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 72.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 85.
+(caption)                particular \caption on input line 106.
 See the caption package documentation for explanation.
 
 )
@@ -1618,64 +1593,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-(ev-op.tex
-
-[6] (figures/sqw-pattern-standard.tikz) (figures/sqw-pattern-standard.tikz)
+(ev-op.tex (figures/sqw-pattern-standard.tikz)
+(figures/sqw-pattern-standard.tikz)
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 7.
 See the caption package documentation for explanation.
 
-(figures/sqw-pattern-variation.tikz) (figures/sqw-pattern-variation.tikz)
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 19.
-See the caption package documentation for explanation.
-
 (figures/sqw-pattern-generalization.tikz)
 (figures/sqw-pattern-generalization.tikz)
+
+[6]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 30.
 See the caption package documentation for explanation.
 
-
-
-[7]
-<img/new_4step.pdf, id=138, 621.32124pt x 366.36874pt>
+<img/new_4step.pdf, id=131, 621.32124pt x 366.36874pt>
 File: img/new_4step.pdf Graphic file (type pdf)
 <use img/new_4step.pdf>
-Package pdftex.def Info: img/new_4step.pdf  used on input line 49.
+Package pdftex.def Info: img/new_4step.pdf  used on input line 53.
 (pdftex.def)             Requested size: 242.98541pt x 143.28014pt.
 File: img/new_4step.pdf Graphic file (type pdf)
 <use img/new_4step.pdf>
-Package pdftex.def Info: img/new_4step.pdf  used on input line 49.
+Package pdftex.def Info: img/new_4step.pdf  used on input line 53.
 (pdftex.def)             Requested size: 242.98541pt x 143.28014pt.
-
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 50.
+(caption)                particular \caption on input line 54.
 See the caption package documentation for explanation.
 
 
 
-[8 <./img/new_4step.pdf>])
+[7 <./img/new_4step.pdf>])
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 (conclusion.tex
 
-[9])
+[8])
 Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 (JSB24-sub.bbl
 
-[10])
+[9])
 
-[11] (JSB24-sub.aux)
+[10] (JSB24-sub.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1684,47 +1650,51 @@ L3 programming layer <2024-05-27>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `JSB24-sub.out' has not changed.
 (rerunfilecheck)             Checksum: 3B96676B0975973B48378CDDBF922308;283.
  ) 
 Here is how much of TeX's memory you used:
- 43547 strings out of 473904
- 986434 string characters out of 5726601
- 2003908 words of memory out of 5000000
- 65354 multiletter control sequences out of 15000+600000
- 580714 words of font info for 192 fonts, out of 8000000 for 9000
+ 43655 strings out of 473904
+ 988855 string characters out of 5726601
+ 2005908 words of memory out of 5000000
+ 65460 multiletter control sequences out of 15000+600000
+ 580555 words of font info for 190 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,20n,110p,1168b,916s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx6.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmbx9.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bruno/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bruno/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/bruno/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/bruno/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/
-bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C
-:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
-b10.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cmextra/cmmib6.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cmextra/cmmib9.pfb><C:/Users/bruno/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bruno/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/bruno/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/bruno/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/brun
-o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Use
-rs/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy5.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy7.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmti10.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmti9.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/bruno/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on JSB24-sub.pdf (11 pages, 509787 bytes).
+ 104i,20n,110p,1168b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cme
+xtra/cmbsy9.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx6.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/bruno/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bruno/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bruno/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/br
+uno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/
+Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.
+pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi9.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmib10.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cmextra/cmmib6.pfb><C:/Users/bruno/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb><C:/Users/bruno/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bruno/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/brun
+o/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Use
+rs/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+<C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r9.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmsy5.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb><C:/Users/bruno/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bruno/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/bruno/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/bruno/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on JSB24-sub.pdf (10 pages, 506103 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
  33316 words of extra memory for PDF output out of 35830 (max. 10000000)
 
