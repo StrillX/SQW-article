@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  11 OCT 2024 16:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.8)  11 OCT 2024 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1650,18 +1650,15 @@ L3 programming layer <2024-05-27>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `JSB24-sub.out' has not changed.
 (rerunfilecheck)             Checksum: 3B96676B0975973B48378CDDBF922308;283.
  ) 
 Here is how much of TeX's memory you used:
- 43655 strings out of 473904
- 988855 string characters out of 5726601
+ 43658 strings out of 473904
+ 988880 string characters out of 5726601
  2005908 words of memory out of 5000000
  65460 multiletter control sequences out of 15000+600000
- 580555 words of font info for 190 fonts, out of 8000000 for 9000
+ 580606 words of font info for 191 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,20n,110p,1168b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bruno/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cme
@@ -1692,9 +1689,9 @@ onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bruno/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/bruno/AppData/Local/
 Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/bruno/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on JSB24-sub.pdf (10 pages, 506103 bytes).
+Output written on JSB24-sub.pdf (10 pages, 506806 bytes).
 PDF statistics:
- 291 PDF objects out of 1000 (max. 8388607)
- 53 named destinations out of 1000 (max. 500000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
  33316 words of extra memory for PDF output out of 35830 (max. 10000000)
 
