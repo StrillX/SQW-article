@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: JSB24-sub.aux
@@ -46,3 +47,51 @@ warning$ -- 0
 while$ -- 57
 width$ -- 20
 write$ -- 210
+=======
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: JSB24-sub.aux
+The style file: alpha.bst
+Database file #1: references.bib
+You've used 15 entries,
+            2543 wiz_defined-function locations,
+            667 strings with 7509 characters,
+and the built_in function-call counts, 6238 in all, are:
+= -- 599
+> -- 365
+< -- 7
++ -- 130
+- -- 128
+* -- 497
+:= -- 1082
+add.period$ -- 46
+call.type$ -- 15
+change.case$ -- 108
+chr.to.int$ -- 14
+cite$ -- 15
+duplicate$ -- 219
+empty$ -- 406
+format.name$ -- 144
+if$ -- 1227
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 12
+newline$ -- 78
+num.names$ -- 47
+pop$ -- 81
+preamble$ -- 1
+purify$ -- 121
+quote$ -- 0
+skip$ -- 184
+stack$ -- 0
+substring$ -- 284
+swap$ -- 26
+text.length$ -- 7
+text.prefix$ -- 3
+top$ -- 0
+type$ -- 120
+warning$ -- 0
+while$ -- 54
+width$ -- 19
+write$ -- 197
+>>>>>>> 993276faa2f66cd541fdf057564374205a1ddea2

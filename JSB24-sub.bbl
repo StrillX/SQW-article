@@ -11,12 +11,21 @@ M.~Cerezo, Andrew Arrasmith, Ryan Babbush, Simon~C. Benjamin, Suguru Endo,
 \bibitem[CD08]{CoeckeD08}
 Bob Coecke and Ross Duncan.
 \newblock Interacting quantum observables.
+<<<<<<< HEAD
 \newblock In Luca Aceto, Ivan Damg{\aa}rd, Leslie~Ann Goldberg, Magn{\'{
   u}}s~M. Halld{\'{o}}rsson, Anna Ing{\'{o}}lfsd{\'{o}}ttir, and Igor
   Walukiewicz, editors, {\em Automata, Languages and Programming, 35th
   International Colloquium, {ICALP} 2008, Reykjavik, Iceland, July 7-11, 2008,
   Proceedings.}, volume 5126 of {\em Lecture Notes in Computer Science}, pages
   298--310. Springer, 2008.
+=======
+\newblock In Luca Aceto, Ivan Damg{\aa}rd, Leslie~Ann Goldberg, Magn{\'{u}}s~M.
+  Halld{\'{o}}rsson, Anna Ing{\'{o}}lfsd{\'{o}}ttir, and Igor Walukiewicz,
+  editors, {\em Automata, Languages and Programming, 35th International
+  Colloquium, {ICALP} 2008, Reykjavik, Iceland, July 7-11, 2008, Proceedings.},
+  volume 5126 of {\em Lecture Notes in Computer Science}, pages 298--310.
+  Springer, 2008.
+>>>>>>> 993276faa2f66cd541fdf057564374205a1ddea2
 
 \bibitem[CHKW22]{CoeckeHKW22}
 Bob Coecke, Dominic Horsman, Aleks Kissinger, and Quanlong Wang.
@@ -53,11 +62,14 @@ Aleks Kissinger and John van~de Wetering.
 \newblock Reducing the number of non-clifford gates in quantum circuits.
 \newblock {\em Physical Review A}, 102(2), August 2020.
 
+<<<<<<< HEAD
 \bibitem[PdOM17]{Portugal_2017}
 R.~Portugal, M.~C. de~Oliveira, and J.~K. Moqadam.
 \newblock Staggered quantum walks with hamiltonians.
 \newblock {\em Physical Review A}, 95(1), January 2017.
 
+=======
+>>>>>>> 993276faa2f66cd541fdf057564374205a1ddea2
 \bibitem[Pre18]{Preskill2018}
 John Preskill.
 \newblock Quantum {C}omputing in the {NISQ} era and beyond.

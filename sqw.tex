@@ -54,7 +54,11 @@ more gates than the one obtained from the simple optimisations mentioned above, 
 In fact, the \texttt{full\_reduce} method introduces several additional Hadamard gates  to make all the edges Hadamard-edges, and color-changes all the X-spiders. 
 The subsequent  circuit extraction  'preserves' the nature of the \textit{graph-like} ZX-diagram. As such there are a lot of Hadamard gates and Z-spiders that could cancel-out or change color. Following the extraction with a small set of simplifications, basically resorting to fusion rewrite rules followed by a color-change, we get a much smaller circuit. 
 
+<<<<<<< HEAD
 This fully-simplified circuit now surpasses the original circuit in both the total amount of gates and T-count, but not the one obtained with the simple optimisations above. Although the reduction of both these metrics are not that significant in this example, when applying the same techniques in models with a greater number of steps  reductions in the number of gates and T-count become quite clear. The following tables show, respectively, the total number of  gates and the T-count value induced by the different optimisation procedures used on the same 3-qubit implementation.
+=======
+This fully-simplified circuit now surpasses the original circuit in both the total amount of gates and T-count, but not the one obtained with the simple optimisations above. Although the reduction of both these metrics are not that significant in this example, when applying the same techniques in models with a greater number of steps  reductions in the number of gates and T-count become quite clear. The following tables show, respectively, the total number of  gates and the T-count value induced by the different optimisation procedures used.
+>>>>>>> 993276faa2f66cd541fdf057564374205a1ddea2
 
 \begin{table}[H]
 \centering

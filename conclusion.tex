@@ -2,6 +2,10 @@
 
 
 
+ The study of staggered quantum walks in the ZX-calculus, as described in the previous sections, illustrates the ways in which a (diagrammatic) algebraic calculus can guide the optimisation of quantum programs. The lesson is well-known in classical software engineering: building formal models of programs and reasoning about them in a calculational way is key to increase performance through correctness-preserving transformations. The same will be similarly true in the emerging design discipline for quantum algorithms.
+
+
+
 
 The exercise showed that the original, 'intuitive' implementation of a staggered quantum walk can be heavily optimised with respect to both the total number of gates and the T-count value, therefore making the staggered model a suitable algorithmic tool in the NISQ era\cite{Preskill2018}. The exercise also lead to the identification of an alternative formulation of the evolution operator with a significant reduction in the number of gates involved and thus suitable for running on more limited quantum processing units. As mentioned in the previous section, however, a number of issues, related to determining the  suitable parametrisation scheme and better understanding the structure of the initial and final stages in the resulting circuit,  still require further investigation. Similarly, it is not completely  clear how the choice of the initial state 
 influences how well the operator approximates the model evolution. Comparison of our results with other work on graph reconfiguration in ZX reported in recent references \cite{Dun20,Ufr23} is being carried out.
